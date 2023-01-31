@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+ int a,b,flag,d;
+ scanf("%d",&b);
+ flag=1;
+ for(a=2;a<=sqrt(b);a=a+1)
+ {
+     if(b%a==0)
+     {
+         flag=0;
+     }
+ }
+ if(flag==0)
+ {
+     printf("not prime");
+ }
+ else
+ {
+     printf("prime");
+ }
+  return 0;
+}
